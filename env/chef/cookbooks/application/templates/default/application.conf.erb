@@ -1,0 +1,24 @@
+# Override the Apache User (vhosts are included at the end of apache2.conf Muhaha)
+User vagrant
+Group vagrant
+
+<VirtualHost *:80>
+
+    DocumentRoot <%= @node[:vagrant][:directory] %>/web
+
+    LogLevel info
+    ErrorLog <%= @node[:vagrant][:directory] %>/logs/error.log
+    CustomLog <%= @node[:vagrant][:directory] %>/logs/access.log combined
+
+    RewriteEngine On
+    RewriteLogLevel 0
+    RewriteLog <%= @node[:vagrant][:directory] %>/logs/rewrite.log
+
+    <Directory "<%= @node[:vagrant][:directory] %>/web">
+        Options Indexes FollowSymLinks MultiViews
+        AllowOverride All
+        Order allow,deny
+        allow from all
+    </Directory>
+
+</VirtualHost>
