@@ -2,7 +2,7 @@
 #require_recipe "mysql::server"
 require_recipe "apache2"
 require_recipe "apache2::mod_php5"
-require_recipe "apache2::mod_rewrite"
+#require_recipe "apache2::mod_rewrite"
 require_recipe "php"
 #require_recipe "php::module_mysql"
 #require_recipe "php::module_curl"
