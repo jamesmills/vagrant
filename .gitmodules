@@ -10,6 +10,3 @@
 [submodule "php"]
     path = env/chef/cookbooks/php
     url = git://github.com/opscode-cookbooks/php.git
-[submodule "php"]
-    path = env/chef/cookbooks/php
-    url = git://github.com/opscode-cookbooks/php.git
