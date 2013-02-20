@@ -1,3 +1,15 @@
 [submodule "apache2"]
 	path = env/chef/cookbooks/apache2
 	url = git://github.com/opscode-cookbooks/apache2.git
+[submodule "mysql"]
+	path = env/chef/cookbooks/mysql
+	url = git://github.com/opscode-cookbooks/mysql.git
+[submodule "openssl"]
+    path = env/chef/cookbooks/openssl
+    url = git://github.com/opscode-cookbooks/openssl.git
+[submodule "php"]
+    path = env/chef/cookbooks/php
+    url = git://github.com/opscode-cookbooks/php.git
+[submodule "php"]
+    path = env/chef/cookbooks/php
+    url = git://github.com/opscode-cookbooks/php.git
