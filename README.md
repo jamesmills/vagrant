@@ -43,6 +43,7 @@ Symfony
 --------------
 1. Download, unzip and copy Symfony Standard into the project_folder
 2. Remove IP checks from web/config.php & web/app_dev.php
+3. Go to the Symfony config file [config.php](http://33.33.33.33/config.php)
 
 `````bash
 curl http://symfony.com/get/Symfony_Standard_Vendors_2.1.7.zip -o archive.zip 
