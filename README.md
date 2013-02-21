@@ -32,25 +32,25 @@ Let's do it!
 4. SSH into the new Virtual Machine
 5. Make coffee as a reward for being awesome
 
-`
+`````bash
 git clone --recursive git@github.com:jamesmills/vagrant.git project_folder
 cd project_folder
 vagrant up
 vagrant ssh
-`
+````
 
 Symfony
 --------------
 1. Download, unzip and copy Symfony Standard into the project_folder
 2. Remove IP checks from web/config.php & web/app_dev.php
 
-`
+`````bash
 curl http://symfony.com/get/Symfony_Standard_Vendors_2.1.7.zip -o archive.zip 
 unzip -o archive.zip 
 rm -f archive.zip 
 cp -R Symfony/ /Users/jamesmills/Projects/project_folder
 rm -rf Symfony
-`
+````
 
 
 
