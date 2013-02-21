@@ -18,8 +18,9 @@ Vagrant::Config.run do |config|
     chef.add_recipe "application"
     chef.json = {
       :mysql => {
-	:server_root_password => 'root',
-	:allow_remote_root => true
+        :server_root_password => 'root',
+        :allow_remote_root => true,
+        :bind_address => "0.0.0.0"
       }
     }
     end
