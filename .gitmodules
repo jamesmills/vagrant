@@ -10,3 +10,6 @@
 [submodule "php"]
     path = env/chef/cookbooks/php
     url = git://github.com/opscode-cookbooks/php.git
+[submodule "env/chef/cookbooks/memcached"]
+	path = env/chef/cookbooks/memcached
+	url = git@github.com:opscode-cookbooks/memcached.git

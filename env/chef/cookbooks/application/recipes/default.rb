@@ -6,6 +6,7 @@ execute "update/sync timezone" do
   command "echo \"Europe/London\" | sudo tee /etc/timezone && dpkg-reconfigure --frontend noninteractive tzdata"
 end
 
+include_recipe "memcached"
 include_recipe "openssl"
 include_recipe "mysql::server"
 include_recipe "apache2"
@@ -16,6 +17,7 @@ include_recipe "php"
 include_recipe "php::module_mysql"
 include_recipe "php::module_curl"
 include_recipe "php::module_gd"
+include_recipe "php::module_memcache"
 include_recipe "sendmail"
 
 execute "disable-default-site" do
